@@ -1,4 +1,4 @@
-DO-WHILE LOOP
+// DO-WHILE LOOP
 
 // Q1. Print numbers 10 down to 1
 {
