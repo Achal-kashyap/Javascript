@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=orange" />
   <img src="https://img.shields.io/badge/Focus-Problem%20Solving-8A2BE2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-00C853?style=for-the-badge" />
 </p>
