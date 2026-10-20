@@ -646,23 +646,23 @@
 // }
 // console.log(arr)
 
-function MoveZero(arr) {
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == 0) {
-            count++;
-        }
-    }
-    for (let i = 0; i < count; i++) {
-        arr.splice(arr.indexOf(0), 1);
-        arr.push(0);
-    }
-    return arr;
-}
+// function MoveZero(arr) {
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] == 0) {
+//             count++;
+//         } 
+//     }
+//     for (let i = 0; i < count; i++) {
+//         a  rr.splice(arr.indexOf(0), 1);
+//         arr.push(0);
+//     }
+//     return arr;
+// }
 
-console.log(MoveZero([1, 0, 3, 0, 4, 5, 0, 6]));
+// console.log(MoveZero([1, 0, 3, 0, 4, 5, 0, 6]));
 
-let arr=["std1","std2","std3","std4","std5"]
-for (i=0;i<arr.length;i++){
-    console.log(arr[i])
-}
+// let arr=["std1","std2","std3","std4","std5"]
+// for (i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
