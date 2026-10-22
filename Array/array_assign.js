@@ -98,3 +98,99 @@ for (var j = 0; j < names.length; j++) {
 for (var k = 0; k <= names.length; k++) {
   console.log(names[k]);
 }
+
+
+
+// 7. Adding Elements to Arrays
+
+// 1. push() adds an element at the end.
+// 2. unshift() adds an element at the beginning.
+3.
+let nums = [1, 2, 3];
+nums.push(4);
+console.log(nums);
+Output: [1, 2, 3, 4]
+
+4.
+nums.unshift(0);
+console.log(nums);
+Output: [0, 1, 2, 3, 4]
+
+// 5. True. Both modify the original array.
+
+
+// 8. Removing Elements
+
+// 1. pop() removes the last element.
+// 2. shift() removes the first element.
+// 3.
+let nums = [100, 200, 300, 400, 500];
+nums.pop();
+console.log(nums);
+// Output: [100, 200, 300, 400]
+
+// 4. nums.shift();
+// console.log(nums);
+// Output: [200, 300, 400]
+
+// 5. Both return the removed element.
+
+
+// 9. Searching in Arrays
+
+// 1. indexOf() returns the index of the element.
+// 2. If the element is absent, it returns -1.
+// 3. const names = ["Jenil", "Mahir", "Arjun"];
+// console.log(names.indexOf("Mahir"));
+// Output: 1
+
+// 4. console.log(names.indexOf("Krishna"));
+// Output: -1
+
+// 5. students.indexOf("Priyesha");
+
+
+// 10. Array with Different Data Types
+
+// 1. Yes, an array can store different data types.
+// 2. const data = [100, "Hello", true, null];
+// 3. Use typeof to check the data type.
+// 4. typeof data[0] returns "number".
+// 5. typeof data[2] returns "boolean".
+
+
+// 11. Array of Arrays (Matrix) – 2D Arrays
+
+// 1. A 2D array stores data in rows and columns.
+// 2. matrix[2][1] returns 6.
+
+// const matrix = [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6]
+// ];
+// console.log(matrix[2][1]);
+
+// 3. Create a 3×3 matrix and print row index 1, column index 2.
+// const matrix2 = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+// console.log(matrix2[1][2]);
+
+// 4. Print the last element of the last row.
+// const arr = [
+//     [10, 20, 30],
+//     [40, 50, 60],
+//     [70, 80, 90]
+// ];
+// console.log(arr[arr.length - 1][arr[arr.length - 1].length - 1]);
+
+// 5. Create a 2×3 matrix, update [1][1] to 100, and print it.
+// const matrix3 = [
+//     [1, 2, 3],
+//     [4, 5, 6]
+// ];
+// matrix3[1][1] = 100;
+// console.log(matrix3);
