@@ -124,9 +124,9 @@ Output: [0, 1, 2, 3, 4]
 // 1. pop() removes the last element.
 // 2. shift() removes the first element.
 // 3.
-let nums = [100, 200, 300, 400, 500];
-nums.pop();
-console.log(nums);
+// let nums = [100, 200, 300, 400, 500];
+// nums.pop();
+// console.log(nums);
 // Output: [100, 200, 300, 400]
 
 // 4. nums.shift();
