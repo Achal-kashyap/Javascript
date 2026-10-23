@@ -701,42 +701,98 @@
 // console.log(students.indexOf("Priya"));
 // console.log(students.indexOf("Rohit")); 
 
-let arr = [10, "Hello", true, null];
+// let arr = [10, "Hello", true, null];
 
-for (let i = 0; i < arr.length; i++) {
-    console.log(typeof arr[i]);
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(typeof arr[i]);
+// }
+
+// let arr = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+// console.log(arr[1][2]);
+
+// let arr2= [
+//     [10, 20, 30, 40],
+//     [50, 60, 70, 80]
+// ];
+// console.log(arr2[0]);
+
+// let marks = [
+//     [80, 75, 90],
+//     [85, 88, 92],
+//     [70, 78, 82]
+// ];
+// console.log(marks[1]);
+
+// const arr3= [
+//     [10, 20, 30],
+//     [40, 50, 60],
+//     [70, 80, 90]
+// ];
+// console.log(arr3[2][2]);
+
+// let arr4 = [
+//     [1, 2, 3],
+//     [4, 5, 6]
+// ];
+// arr4[1][1] = 100;
+// console.log(arr4);
+
+
+// const marks = [
+//     [85, 90, 92],
+//     [70, 75, 80], 
+//     [88, 82, 89], 
+//     [90, 85, 95]  
+// ];
+
+// for (let i = 0; i < marks.length; i++) {
+//     const studentMarks = marks[i];
+//     const total = studentMarks[0] + studentMarks[1] + studentMarks[2];
+//     const avg = total / 3;
+//     console.log("Student"+(i + 1)+"total marks:"+total);
+//     console.log("Student"+(i + 1)+"average:"+avg);
+// }
+
+// const marks = [
+//     [85, 90, 92],
+//     [70, 75, 80],
+//     [88, 82, 89],
+//     [90, 85, 95]
+// ]
+// for(let i = 0; i < marks.length; i++) {
+//     let total = 0;
+//     for (let j = 0; j < marks[i].length; j++) {
+//         total += marks[i][j];
+//     }
+//     let avg  = total / marks[i].length;
+//     console.log("Student " + (i + 1) + " Total: " + total);
+//     console.log("Student " + (i + 1) + " Average: " + avg);
+// } 
+
+const marks = [85, 90, 72, 95, 80];
+
+let highest = marks[0];
+let lowest = marks[0];
+let sum = 0;
+
+for (let i = 0; i < marks.length; i++) {
+    sum += marks[i];
+
+    if (marks[i] > highest) {
+        highest = marks[i];
+    }
+
+    if (marks[i] < lowest) {
+        lowest = marks[i];
+    }
 }
 
-let arr = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-console.log(arr[1][2]);
-
-let arr2= [
-    [10, 20, 30, 40],
-    [50, 60, 70, 80]
-];
-console.log(arr2[0]);
-
-let marks = [
-    [80, 75, 90],
-    [85, 88, 92],
-    [70, 78, 82]
-];
-console.log(marks[1]);
-
-const arr3= [
-    [10, 20, 30],
-    [40, 50, 60],
-    [70, 80, 90]
-];
-console.log(arr3[2][2]);
-
-let arr4 = [
-    [1, 2, 3],
-    [4, 5, 6]
-];
-arr4[1][1] = 100;
-console.log(arr4);
+let average = sum / marks.length;
+console.log("Highest marks: " + highest);
+console.log("Lowest marks: " + lowest);
+console.log("Sum: " + sum);
+console.log("Average: " + average);
