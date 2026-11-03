@@ -1,8 +1,8 @@
-let arr = [
-  [1, 2, 3],
-  [4, 7, 6],
-  [8, 8, 9]
-];
+// let arr = [
+//   [1, 2, 3],
+//   [4, 7, 6],
+//   [8, 8, 9]
+// ];
 // console.log(arr[2][2])
 
 // for(let i=0; i<arr.length; i++){
@@ -63,35 +63,35 @@ let arr = [
 // }
 // console.log(l)
 
-// let m=[]
-// for(let i=0;i<=4;i++){
-//     mi=[]
-//     for(let j=0;j<=4;j++){
-//         let cell_v=(i+1)*(j+1)
-//         mi[j]=cell_v;
-//     }
-//     m.push(mi)
-// }
-// console.log(m)
+let m=[]
+for(let i=0;i<=4;i++){
+    mi=[]
+    for(let j=0;j<=4;j++){
+        let cell_v=(i+1)*(j+1)
+        mi[j]=cell_v;
+    }
+    m.push(mi)
+}
+console.log(m)
 
-// let arr3 =[
-//   [1, 2, 3],
-//   [8, 8, 6],
-//   [7, 7, 9]
-// ];
-// let dup=0
-// for(let i=0;i<arr3.length;i++){
-//     for(let j=0;j<arr3[i].length;j++){
-//         for (let x = 0; x < arr3.length; x++) {
-//             for (let y = 0; y < arr3[x].length; y++) {
-//                 if((i!=x || j!=y) && arr3[i][j]==arr3[x][y]){
-//                     dup=arr3[i][j]
-//                 }
-//             }
-//         }
-//     }
-// }
-// console.log(dup)
+let arr3 =[
+  [1, 2, 3],
+  [8, 8, 6],
+  [7, 7, 9]
+];
+let dup=0
+for(let i=0;i<arr3.length;i++){
+    for(let j=0;j<arr3[i].length;j++){
+        for (let x = 0; x < arr3.length; x++) {
+            for (let y = 0; y < arr3[x].length; y++) {
+                if((i!=x || j!=y) && arr3[i][j]==arr3[x][y]){
+                    dup=arr3[i][j]
+                }
+            }
+        }
+    }
+}
+console.log(dup)
 
 
 function greet(name) {
@@ -100,3 +100,14 @@ return ("Welcome to CodingGita, "+ name);
 
 console.log(greet("Nirmal"));
 console.log(greet("Aniket"));
+
+  
+let arr=["ak","bk","ck"]
+console.log(arr.includes("ck"))
+
+let a=10
+let b=20
+let temp=a;
+a=b
+b=temp
+console.log(a,b)

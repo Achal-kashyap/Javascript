@@ -996,7 +996,7 @@ console.log(score46);
 /*
 ANS 46:
 90
-50
+50 
 Shadowing means a local variable with the same name hides the outer
 variable inside the function.
 */

@@ -773,26 +773,26 @@
 //     console.log("Student " + (i + 1) + " Average: " + avg);
 // } 
 
-const marks = [85, 90, 72, 95, 80];
+// const marks = [85, 90, 72, 95, 80];
+// let highest = marks[0];
+// let lowest = marks[0];
+// let sum = 0;
 
-let highest = marks[0];
-let lowest = marks[0];
-let sum = 0;
+// for (let i = 0; i < marks.length; i++) {
+//     sum += marks[i];
 
-for (let i = 0; i < marks.length; i++) {
-    sum += marks[i];
+//     if (marks[i] > highest) {
+//         highest = marks[i];
+//     }
 
-    if (marks[i] > highest) {
-        highest = marks[i];
-    }
+//     if (marks[i] < lowest) {
+//         lowest = marks[i];
+//     } 
+// }
 
-    if (marks[i] < lowest) {
-        lowest = marks[i];
-    }
-}
+// let average = sum / marks.length;
+// console.log("Highest marks: " + highest);
+// console.log("Lowest marks: " + lowest);
+// console.log("Sum: " + sum);
+// console.log("Average: " + average);
 
-let average = sum / marks.length;
-console.log("Highest marks: " + highest);
-console.log("Lowest marks: " + lowest);
-console.log("Sum: " + sum);
-console.log("Average: " + average);
