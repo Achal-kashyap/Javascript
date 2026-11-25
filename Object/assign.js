@@ -20,19 +20,51 @@
 // } 
 
 
-let students = [
-    { name: "Rahul", marks: 85 },
-    { name: "Aman", marks: 92 },
-    { name: "Rohit", marks: 78 },
-    { name: "Karan", marks: 95 }
+// let students = [
+//     { name: "Rahul", marks: 85 },
+//     { name: "Aman", marks: 92 },
+//     { name: "Rohit", marks: 78 },
+//     { name: "Karan", marks: 95 }
+// ];
+
+// let highest = students[0];
+
+// for (let i = 1; i < students.length; i++) {
+//     if (students[i].marks > highest.marks) {
+//         highest = students[i];
+//     }
+// }
+// console.log("Highest Marks Student:", highest.name);
+
+
+let book = {
+    title: "Atomic Habits",
+    author: "James Clear",
+    price: 450
+};
+
+console.log("Single Book:");
+console.log(book);
+
+
+let books = [
+    {
+        title: "The Alchemist",
+        author: "Paulo Coelho",
+        price: 300
+    },
+    {
+        title: "Rich Dad Poor Dad",
+        author: "Robert Kiyosaki",
+        price: 400
+    },
+    {
+        title: "Deep Work",
+        author: "Cal Newport",
+        price: 350
+    }
 ];
 
-let highest = students[0];
+console.log("Three Books:");
+console.log(books);
 
-for (let i = 1; i < students.length; i++) {
-    if (students[i].marks > highest.marks) {
-        highest = students[i];
-    }
-}
-
-console.log("Highest Marks Student:", highest.name);
