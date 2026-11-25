@@ -67,4 +67,3 @@ let books = [
 
 console.log("Three Books:");
 console.log(books);
-
