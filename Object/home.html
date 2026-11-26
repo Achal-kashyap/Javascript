@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | CampusLeaf</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="home.html">✦ CampusLeaf</a>
+    <nav aria-label="Main navigation">
+      <a href="home.html" aria-current="page">Dashboard</a>
+      <a href="report.html">Activity</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="login.html">Switch student</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="label">CAMPUS SUSTAINABILITY / OVERVIEW</p>
+      <h1>Small steps. Greener campus.</h1>
+      <p>Welcome, <strong id="studentName">student</strong>.
+        Spot a waste issue, log your recycling, or try an eco challenge.</p>
+      <a class="button" href="report.html">Log an activity →</a>
+    </section>
+
+    <h2>Sustainability dashboard</h2>
+    <p>Campus totals include all student profiles saved in this browser.</p>
+    <div class="row">
+      <article class="card stat">
+        <span>Waste reports</span>
+        <strong id="reportCount">0</strong>
+      </article>
+      <article class="card stat">
+        <span>Items recycled</span>
+        <strong id="recycleCount">0</strong>
+      </article>
+      <article class="card stat accent">
+        <span>My challenge points</span>
+        <strong id="pointCount">0</strong>
+      </article>
+    </div>
+
+    <div class="row">
+      <section class="card">
+        <p class="label">01 / TAKE ACTION</p>
+        <h2>Notice a problem?</h2>
+        <p>Record overflowing bins, plastic litter or electricity wastage.</p>
+        <a href="report.html">Open activity tracker →</a>
+      </section>
+      <section class="card">
+        <p class="label">02 / BUILD A HABIT</p>
+        <h2>Try an eco challenge</h2>
+        <p>Complete a small action and see your place on the student leaderboard.</p>
+        <a href="challenges.html">Explore challenges →</a>
+      </section>
+    </div>
+  </main>
+  <footer>CampusLeaf · Student sustainability project</footer>
+</body>
+</html>

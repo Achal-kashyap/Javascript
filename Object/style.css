@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.55;
+  color: #203e34;
+  background: #f4f7ed;
+}
+
+/* One blurry light layer and one quiet glitter layer behind the page. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 12% 22%, #caeacf, transparent 35%),
+    radial-gradient(circle at 88% 72%, #f4e7bb, transparent 36%);
+  filter: blur(18px);
+}
+
+body::after {
+  background-image: radial-gradient(#ffffff 1.3px, transparent 2px);
+  background-size: 32px 32px;
+}
+
+header, main, footer {
+  width: 92%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 22px 0;
+  border-bottom: 1px solid #cbd9c9;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+nav a:hover, nav a[aria-current="page"] {
+  background: #dcebd8;
+}
+
+main {
+  padding: 28px 0;
+}
+
+.hero, .card {
+  border: 1px solid #d3dfd0;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.hero {
+  background: #e1efdb;
+  padding: 32px;
+  margin-bottom: 26px;
+}
+
+.card {
+  background: #fffffff0;
+}
+
+h1, h2, p {
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.label {
+  color: #496849;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.row > * {
+  flex: 1 1 230px;
+  min-width: 0;
+}
+
+.stat strong {
+  display: block;
+  color: #226344;
+  font-size: 34px;
+}
+
+.accent {
+  background: #f8f0d6;
+}
+
+a {
+  color: #20583f;
+}
+
+.button, button {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: bold;
+  color: white;
+  background: #286346;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover, button:hover {
+  background: #174a32;
+}
+
+button:disabled {
+  color: #445849;
+  background: #e2e9df;
+  cursor: default;
+}
+
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #aebfad;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+}
+
+.login-box {
+  max-width: 440px;
+  margin: 55px auto;
+}
+
+.message {
+  color: #20583f;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+li {
+  padding: 5px 0;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding: 15px 0 24px;
+  color: #526453;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 29px; }
+  .hero, .card { padding: 18px; }
+  nav a { padding: 4px 6px; }
+}

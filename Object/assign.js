@@ -179,9 +179,7 @@
 //         }
 //     }
 // ];
-
-// for (let i = 0; i < students.length; i++) {
-//     console.log(students[i].name);
+ 
 //     console.log(students[i].marks);
 //     console.log(students[i].address.city);
 // }
