@@ -303,16 +303,34 @@
 // console.log("Total properties:", count);
 
 
-let company = {
-    name: "Google",
-    address: {
-        city: "Ahmedabad",
-        pincode: 382421
-    },
-    employees: ["Rahul", "Aman", "Rohit"]
-};
-console.log(company.address.city);
-console.log(company.employees[0]);
-for (let key in company.address) {
-    console.log(key + ": " + company.address[key]);
+// let company = {
+//     name: "Google",
+//     address: {
+//         city: "Ahmedabad",
+//         pincode: 382421
+//     },
+//     employees: ["Rahul", "Aman", "Rohit"]
+// };
+// console.log(company.address.city);
+// console.log(company.employees[0]);
+// for (let key in company.address) {
+//     console.log(key + ": " + company.address[key]);
+// }
+
+// let a=10
+// let b=a
+// b=20
+// console.log(b)
+// console.log(a)
+
+
+let a={
+    name:"ssss"
 }
+
+let b=a
+b.name="aaaa"
+console.log(b)
+console.log(a)
+
+
