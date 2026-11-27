@@ -267,6 +267,7 @@
 //     }
 // };
 
+
 // console.log(product.manufacturer.country);
 // console.log(product.getDetails());
 
@@ -332,4 +333,3 @@ let b=a
 b.name="aaaa"
 console.log(b)
 console.log(a)
-
