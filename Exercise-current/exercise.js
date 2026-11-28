@@ -353,6 +353,3 @@ console.log(s2.marks);
 
 let data={};
 console.log(data,profile)
-
-
-
