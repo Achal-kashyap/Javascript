@@ -378,15 +378,17 @@
 // obj.name="xyz";
 // console.log(obj.name)
 
-// let s1={
-//     name: "abc",
-//     age: 22
-// }
+let s1={
+    name: "abc",
+    age: 22
+}
 // Object.freeze(s1);
 // delete s1["name"]
 // console.log(s1)
 
-let arr=[1,3,4,5,5,4]
-Object.freeze(arr)
-arr.push(9);
-console.log(arr);
+// let arr=[1,3,4,5,5,4]
+// Object.freeze(arr)
+// arr.push(9);
+// console.log(arr);
+
+console.log(Object.hasOwn(s1,"age"))
