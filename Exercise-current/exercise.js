@@ -328,8 +328,28 @@
 let a={
     name:"ssss"
 }
-
 let b=a
 b.name="aaaa"
 console.log(b)
 console.log(a)
+
+
+var profile = {
+    name: "Chirag",
+    course: "CSE",
+    marks: 90
+};
+var displayData = profile;
+displayData.marks = 95;
+
+
+var s1 = { name: "Harsh", marks: 88 };
+var s2 = {};
+s2.name = s1.name;
+s2.marks = s1.marks;
+s2.marks = 95;
+console.log(s1.marks); 
+console.log(s2.marks);
+
+let data={};
+console.log(data,profile)
