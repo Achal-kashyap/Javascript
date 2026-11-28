@@ -390,5 +390,4 @@ let s1={
 // Object.freeze(arr)
 // arr.push(9);
 // console.log(arr);
-
 console.log(Object.hasOwn(s1,"age"))
