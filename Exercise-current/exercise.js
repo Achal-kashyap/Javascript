@@ -392,3 +392,6 @@ let s1={
 // console.log(arr);
 console.log(Object.hasOwn(s1,"age"))
 
+let s2={
+    
+}
