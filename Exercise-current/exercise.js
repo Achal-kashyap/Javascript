@@ -372,8 +372,21 @@
 // console.log(upet)               //because of imuatability
 
 
-const obj={
-    name: "abc"
-}
-obj.name="xyz";
-console.log(obj.name)
+// const obj={
+//     name: "abc"
+// }
+// obj.name="xyz";
+// console.log(obj.name)
+
+// let s1={
+//     name: "abc",
+//     age: 22
+// }
+// Object.freeze(s1);
+// delete s1["name"]
+// console.log(s1)
+
+let arr=[1,3,4,5,5,4]
+Object.freeze(arr)
+arr.push(9);
+console.log(arr);
